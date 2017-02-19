@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:title="BALA CATEGORY">
+        <CheckBoxPreference
+            android:key="cbp_preferences1"
+            android:title="Sound Select"/>
+        <CheckBoxPreference
+            android:key="cbp_preferences2"
+            android:title="Alarm Select"/>
+
+        <EditTextPreference
+            android:key="etp_preferences1"
+            android:title="Put the interval time"/>
+    </PreferenceCategory>
+
+
+
+    <PreferenceCategory
+        android:title="ARvind Category">
+        <ListPreference
+            android:key="lp_pref1"
+            android:title="Select songs from list"
+            android:entries="@array/Planets"
+            android:entryValues="@array/list1"></ListPreference>
+
+        <RingtonePreference
+            android:key="rtp_pref1"
+            android:title="Ringtone pref"/>
+    </PreferenceCategory>
+
+
+    <PreferenceScreen
+        android:title="Screen 2">
+
+        <PreferenceCategory
+            android:title="New screen open">
+            <EditTextPreference
+                android:key="etp_preferences3"
+                android:title="Whats going on"/>
+        </PreferenceCategory>
+    </PreferenceScreen>
+</PreferenceScreen>

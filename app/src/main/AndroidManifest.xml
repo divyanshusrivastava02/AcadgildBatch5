@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.acadgildbatch5">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERIVES" />
+
+
+    <!--
+
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality. 
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/appicon"
+        android:label="AcadgildBatch5"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity" />
+        <activity
+            android:name=".SecondActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Animation.AppCompat.Dialog" />
+        <activity android:name=".AcadgildActivity" />
+        <activity android:name=".Listview1" />
+        <activity android:name=".ListviewClasses.Listview2" />
+        <activity android:name=".CustomList.CustomListActivty" />
+        <activity android:name=".DatePickerExample" />
+        <activity android:name=".menu.OptionMenuExample" />
+        <activity android:name=".menu.ContextMenuExample" />
+        <activity android:name=".menu.PopupMenuExample" />
+        <activity android:name=".fragmentsexample.DetailsActivity" />
+        <activity android:name=".fragmentsexample.FragmentLayout" />
+        <activity android:name=".tabview.ViewPagerExmp" />
+        <activity android:name=".sqlite.SqliteExample" />
+        <activity android:name=".SharePreferences.SharedPrefrencesExample" />
+        <activity android:name=".SharePreferences.ShowValuesActivity" />
+        <activity android:name=".SharePreferences.SettingActivity" />
+        <activity android:name=".DialogExample.DialogActivity" />
+        <activity android:name=".InternalStorageExample.InternalStrorage" />
+        <activity android:name=".ExternalStrorageExample.ExternalStrorage" />
+        <activity android:name=".materialdesign.RecyclerViewExample"></activity>
+        <activity
+            android:name=".sidemenu.Main2Activity"
+            android:label="@string/title_activity_main2"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".palette"></activity>
+        <activity android:name=".animationExample.AnimationSample"></activity>
+        <activity android:name=".asyntaskExample.AsyncTaskSample"></activity>
+        <activity android:name=".BroadcastReceiverSample.RegisterUnregister"></activity>
+
+        <receiver android:name=".BroadcastReceiverSample.MyBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.TIME_SET" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name=".LOginage"></activity>
+        <activity android:name=".contentproviderSample.ContentProviderExmp"></activity>
+        <activity android:name=".LoginPage"></activity>
+        <activity android:name=".services.UnBoundServicesEXMP.UnBoundServiceExample"></activity>
+
+        <service android:name=".services.UnBoundServicesEXMP.MyUnBoundService" />
+
+        <activity android:name=".WebService.WebserviceActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/. 
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".map.MapsActivity"
+            android:label="@string/title_activity_maps">
+
+        </activity>
+        <activity android:name=".map.LocationActivity">
+
+        </activity>
+
+        <activity android:name=".BiologyActivty">
+
+        </activity>
+        <activity android:name=".Physics"
+            >
+
+        </activity>
+        <activity android:name=".socialnetworking.SocialNetworkExmp">
+
+        </activity>
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id"></meta-data>
+
+        <activity android:name="com.facebook.FacebookActivity"
+            android:label="@string/app_name"
+            />
+
+        <service android:name=".firebase.MyFirebaseInstanceIdService">
+            <intent-filter> <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/> </intent-filter>
+        </service>
+        <service android:name=".firebase.MyFirebaseMessingService">
+            <intent-filter> <action android:name="com.google.firebase.MESSAGING_EVENT"/> </intent-filter>
+        </service>
+
+        <activity android:name=".glideExample.GlideSample">
+
+        </activity>
+
+        <activity android:name=".mpchartsample.MPChartExample">
+
+        </activity>
+    </application>
+
+</manifest>

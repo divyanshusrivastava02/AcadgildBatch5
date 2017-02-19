@@ -1,0 +1,51 @@
+{
+  "project_info": {
+    "project_number": "781553362976",
+    "firebase_url": "https://acadgildbatch53.firebaseio.com",
+    "project_id": "acadgildbatch53",
+    "storage_bucket": "acadgildbatch53.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:781553362976:android:6b4f6f1b3184c71d",
+        "android_client_info": {
+          "package_name": "com.acadgildbatch5ind"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "781553362976-md4d2b439dd3ffiujnaqirb9d14o1dsf.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "781553362976-o0kq7nqrasuein7kfv1j9lukict5cdgi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBDwh9QYgAJL-aqBh48jcucBWfoHwL9Yqk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "781553362976-md4d2b439dd3ffiujnaqirb9d14o1dsf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
